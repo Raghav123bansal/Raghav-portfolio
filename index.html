@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Raghav Bansal - B.Tech Computer Science Engineering student specializing in Java, Web Development, DSA, and Artificial Intelligence." />
+  <title>Raghav Bansal | Computer Science Student & Developer</title>
+
+  <!-- Favicon (Inline SVG for clean, fast rendering) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='46' font-weight='bold' fill='white'>RB</text></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings), Inter (Body), JetBrains Mono (Code/Tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 CDN for modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Ambient Gradient Background Lights -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Raghav Bansal Home">
+        <span class="logo-box">RB</span>
+        <span class="logo-text">Raghav<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav CTA & Mobile Hamburger -->
+      <div class="nav-actions">
+        <button class="btn btn-sm btn-outline" id="resume-btn" aria-label="View Resume Summary">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Resume</span>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary">Let's Talk</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- ==================== 1. HOME / HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-indicator"></span>
+            <span>B.Tech CSE Student • Ready for Internships</span>
+          </div>
+
+          <h1 class="hero-heading">
+            Hi, I’m Raghav, a <span class="gradient-text">Computer Science Student</span>
+          </h1>
+
+          <p class="hero-subheading">
+            I am <strong class="text-highlight">Raghav Bansal</strong>, an aspiring software engineer passionate about designing clean software architectures, high-performance algorithms, and scalable web solutions. Welcome to my personal portfolio.
+          </p>
+
+          <!-- Required Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Highlights -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">B.Tech</span>
+              <span class="stat-label">CSE Undergrad</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Core Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">DSA</span>
+              <span class="stat-label">Problem Solver</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Modern Developer Code Terminal -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">raghav@portfolio: ~</div>
+              <div class="terminal-icon"><i class="fa-solid fa-terminal"></i></div>
+            </div>
+            <div class="terminal-body">
+              <p class="code-line"><span class="cmd-prompt">$</span> <span class="cmd-text">whoami</span></p>
+              <p class="code-output text-cyan">"Raghav Bansal — Computer Science Engineer"</p>
+
+              <p class="code-line"><span class="cmd-prompt">$</span> <span class="cmd-text">cat core_interests.json</span></p>
+              <pre class="code-json"><code>{
+  <span class="json-key">"degree"</span>: <span class="json-str">"B.Tech Computer Science & Engg"</span>,
+  <span class="json-key">"focusAreas"</span>: [
+    <span class="json-str">"Java Development"</span>,
+    <span class="json-str">"Web Development"</span>,
+    <span class="json-str">"Data Structures & Algorithms"</span>,
+    <span class="json-str">"Artificial Intelligence"</span>
+  ],
+  <span class="json-key">"status"</span>: <span class="json-str">"Open to software opportunities"</span>
+}</code></pre>
+
+              <p class="code-line"><span class="cmd-prompt">$</span> <span class="cmd-text">echo $MOTTO</span></p>
+              <p class="code-output text-purple">"Turning complex logic into simple, impactful solutions."</p>
+
+              <!-- Dynamic Interactive Output Area -->
+              <div id="terminal-dynamic-logs"></div>
+
+              <!-- Interactive Command Input -->
+              <div class="terminal-interactive-line">
+                <span class="cmd-prompt">$</span>
+                <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help', 'skills', 'projects'..." autocomplete="off" spellcheck="false" aria-label="Terminal command input" />
+              </div>
+
+              <!-- Quick Command Chips -->
+              <div class="terminal-chips">
+                <span class="chips-label">Try:</span>
+                <button type="button" class="term-chip" data-cmd="skills">skills</button>
+                <button type="button" class="term-chip" data-cmd="projects">projects</button>
+                <button type="button" class="term-chip" data-cmd="about">about</button>
+                <button type="button" class="term-chip" data-cmd="clear">clear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">01 / ABOUT ME</span>
+          <h2 class="section-title">Driven by Curiosity, Powered by Code</h2>
+          <p class="section-subtitle">
+            A glimpse into my academic journey, passion for technology, and continuous pursuit of engineering excellence.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative -->
+          <div class="about-bio-card glass-panel reveal">
+            <div class="bio-header">
+              <div class="avatar-ring">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h3 class="bio-name">Raghav Bansal</h3>
+                <p class="bio-role">B.Tech Computer Science Engineering Student</p>
+              </div>
+            </div>
+
+            <div class="bio-content">
+              <p>
+                Hello! I am a dedicated <strong>B.Tech Computer Science and Engineering student</strong> with an insatiable enthusiasm for understanding how software powers our modern world. From writing clean, object-oriented code to architecting intuitive web platforms, I love translating complex challenges into elegant digital realities.
+              </p>
+              <p>
+                My academic and personal pursuits are primarily anchored in four dynamic domains:
+              </p>
+              <ul class="about-highlights-list">
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Java:</strong> Crafting reliable, multi-threaded backend systems with solid object-oriented principles.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Web Development:</strong> Creating sleek, responsive, and accessible user interfaces paired with robust backends.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Data Structures & Algorithms:</strong> Rigorously optimizing time-space complexities and solving algorithmic challenges.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span><strong>Artificial Intelligence:</strong> Exploring machine learning models, intelligent automation, and data-driven systems.</span>
+                </li>
+              </ul>
+              <p>
+                I thrive in collaborative team environments and believe in writing well-documented, testable code that scales smoothly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature Cards for Core Interests -->
+          <div class="interests-grid">
+            <div class="interest-card glass-panel reveal">
+              <div class="interest-icon icon-java">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <h4 class="interest-title">Java Engineering</h4>
+              <p class="interest-desc">
+                Strong foundation in OOP concepts, memory management, collections framework, and building backend services.
+              </p>
+            </div>
+
+            <div class="interest-card glass-panel reveal">
+              <div class="interest-icon icon-web">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h4 class="interest-title">Web Development</h4>
+              <p class="interest-desc">
+                End-to-end full-stack capabilities with modern HTML, CSS, JavaScript, and responsive design systems.
+              </p>
+            </div>
+
+            <div class="interest-card glass-panel reveal">
+              <div class="interest-icon icon-dsa">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h4 class="interest-title">DSA & Problem Solving</h4>
+              <p class="interest-desc">
+                Proficiency in linear & non-linear data structures, dynamic programming, and algorithmic optimization.
+              </p>
+            </div>
+
+            <div class="interest-card glass-panel reveal">
+              <div class="interest-icon icon-ai">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h4 class="interest-title">Artificial Intelligence</h4>
+              <p class="interest-desc">
+                Curious explorer of machine learning paradigms, prompt engineering, and building smart software workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">02 / TECHNICAL TOOLKIT</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">
+            Core technical competencies acquired through coursework, hands-on development, and problem solving.
+          </p>
+        </div>
+
+        <!-- Skills Grid containing all required skills -->
+        <div class="skills-grid">
+          <!-- Skill: Java -->
+          <div class="skill-card glass-panel reveal" data-category="language">
+            <div class="skill-icon-wrapper java">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-top">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-badge">Core & OOP</span>
+              </div>
+              <p class="skill-desc">Object-Oriented Programming, Multi-threading, Collections, Exception Handling</p>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill" style="--level: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Python -->
+          <div class="skill-card glass-panel reveal" data-category="language">
+            <div class="skill-icon-wrapper python">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-top">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-badge">Scripting & AI</span>
+              </div>
+              <p class="skill-desc">Automation, Data Manipulation, Rapid Prototyping, Scripting</p>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill" style="--level: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Data Structures and Algorithms -->
+          <div class="skill-card glass-panel reveal" data-category="core">
+            <div class="skill-icon-wrapper dsa">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-top">
+                <h3 class="skill-name">Data Structures & Algorithms</h3>
+                <span class="skill-badge">Problem Solving</span>
+              </div>
+              <p class="skill-desc">Arrays, Linked Lists, Trees, Graphs, Sorting, Searching, Complexity Analysis</p>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill" style="--level: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: HTML -->
+          <div class="skill-card glass-panel reveal" data-category="web">
+            <div class="skill-icon-wrapper html">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-top">
+                <h3 class="skill-name">HTML</h3>
+                <span class="skill-badge">Semantic Markup</span>
+              </div>
+              <p class="skill-desc">HTML5 Semantic Elements, Web Accessibility (a11y), Clean Structure</p>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill" style="--level: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: CSS -->
+          <div class="skill-card glass-panel reveal" data-category="web">
+            <div class="skill-icon-wrapper css">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-top">
+                <h3 class="skill-name">CSS</h3>
+                <span class="skill-badge">Modern Styling</span>
+              </div>
+              <p class="skill-desc">Flexbox, CSS Grid, Custom Properties, Responsive Layouts, Animations</p>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill" style="--level: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="skill-card glass-panel reveal" data-category="web">
+            <div class="skill-icon-wrapper js">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-top">
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-badge">Interactive Web</span>
+              </div>
+              <p class="skill-desc">ES6+ Syntax, DOM Manipulation, Async/Await, Fetch APIs, Event Handling</p>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill" style="--level: 86%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: MySQL -->
+          <div class="skill-card glass-panel reveal" data-category="database">
+            <div class="skill-icon-wrapper mysql">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-top">
+                <h3 class="skill-name">MySQL</h3>
+                <span class="skill-badge">Relational DB</span>
+              </div>
+              <p class="skill-desc">Schema Design, Complex Queries, Joins, Indexing, Transactions</p>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill" style="--level: 84%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">03 / FEATURED WORK</span>
+          <h2 class="section-title">Projects I’ve Built</h2>
+          <p class="section-subtitle">
+            A selection of projects demonstrating problem-solving capabilities, system design, and software craftsmanship.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: ParKezy (Mandatory Requirement) -->
+          <article class="project-card glass-panel reveal">
+            <div class="project-visual">
+              <div class="project-badge-featured">Featured Project</div>
+              <div class="project-mockup parking-theme">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-url">https://parkezy.app/dashboard</span>
+                </div>
+                <div class="mockup-content">
+                  <div class="parking-grid-preview">
+                    <div class="slot occupied"><i class="fa-solid fa-car"></i> A-01</div>
+                    <div class="slot available pulse"><i class="fa-solid fa-circle-check"></i> A-02</div>
+                    <div class="slot occupied"><i class="fa-solid fa-car"></i> A-03</div>
+                    <div class="slot reserved"><i class="fa-solid fa-clock"></i> A-04</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-category">Smart City Solution</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">ParKezy — Smart Parking Management System</h3>
+              <p class="project-description">
+                An intelligent urban parking management platform designed to eliminate parking congestion and hassle. ParKezy enables real-time slot tracking, advance parking reservations, seamless check-ins, and automated fee calculations with a centralized administrative control dashboard.
+              </p>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+
+              <!-- Interactive Buttons -->
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-primary project-btn" data-project="ParKezy">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Explore System</span>
+                </a>
+                <a href="https://github.com/Raghav123bansal" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AlgoPulse DSA Interactive Visualizer -->
+          <article class="project-card glass-panel reveal">
+            <div class="project-visual">
+              <div class="project-mockup algo-theme">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-url">https://algopulse.dev/visualizer</span>
+                </div>
+                <div class="mockup-content">
+                  <div class="algo-bars-preview">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2 active"></div>
+                    <div class="bar bar-3"></div>
+                    <div class="bar bar-4 active"></div>
+                    <div class="bar bar-5"></div>
+                    <div class="bar bar-6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-category">Educational & Algorithms</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">AlgoPulse — Interactive DSA Visualizer</h3>
+              <p class="project-description">
+                A dynamic algorithm visualization platform designed to help students understand complex data structures and algorithmic flows. Includes step-by-step visualizations for Sorting algorithms, Dijkstra's shortest path, BFS/DFS graph traversals, and Binary Search Trees with speed controls.
+              </p>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">DSA</span>
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">CSS Grid</span>
+              </div>
+
+              <!-- Interactive Buttons -->
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-primary project-btn" data-project="AlgoPulse">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Preview</span>
+                </a>
+                <a href="https://github.com/Raghav123bansal" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: IntelliStudy AI Assistant -->
+          <article class="project-card glass-panel reveal">
+            <div class="project-visual">
+              <div class="project-mockup ai-theme">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-url">https://intellistudy.ai</span>
+                </div>
+                <div class="mockup-content">
+                  <div class="ai-chat-preview">
+                    <div class="chat-bubble user">Summarize QuickSort recursion stack</div>
+                    <div class="chat-bubble bot"><i class="fa-solid fa-bolt"></i> O(log n) auxiliary space...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-category">Artificial Intelligence</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">IntelliStudy — AI-Powered Academic Assistant</h3>
+              <p class="project-description">
+                An intelligent study assistant that processes course notes, engineering documentation, and textbooks to auto-generate structured revision flashcards, concept summaries, and practice multiple-choice quizzes for computer science undergraduates.
+              </p>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AI / NLP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+
+              <!-- Interactive Buttons -->
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-primary project-btn" data-project="IntelliStudy">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Preview</span>
+                </a>
+                <a href="https://github.com/Raghav123bansal" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">04 / GET IN TOUCH</span>
+          <h2 class="section-title">Let’s Connect & Collaborate</h2>
+          <p class="section-subtitle">
+            Whether you have an internship opportunity, project collaboration, or just want to say hi, feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Info & Required Social Buttons -->
+          <div class="contact-info-card glass-panel reveal">
+            <h3 class="contact-info-title">Let's talk about code, projects, or opportunities</h3>
+            <p class="contact-info-desc">
+              I am actively seeking software engineering internships, open-source collaborations, and exciting development challenges. Drop a message or connect through my profiles!
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <span class="method-label">Email Me</span>
+                  <a href="mailto:raghavbansal@example.com" class="method-value" id="copy-email-btn" title="Click to copy email">
+                    raghavbansal@example.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="method-label">Location</span>
+                  <span class="method-value">India • Open to Remote & Relocation</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                <div>
+                  <span class="method-label">Current Status</span>
+                  <span class="method-value">B.Tech CSE Undergrad (Final Years)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Required Social Buttons: LinkedIn and GitHub -->
+            <div class="social-links-wrapper">
+              <h4 class="social-heading">Connect with me on:</h4>
+              <div class="social-buttons-group">
+                <!-- LinkedIn Button -->
+                <a href="https://linkedin.com/in/raghav-bansal" target="_blank" rel="noopener noreferrer" class="btn btn-social btn-linkedin" aria-label="Visit Raghav Bansal's LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+
+                <!-- GitHub Button -->
+                <a href="https://github.com/Raghav123bansal" target="_blank" rel="noopener noreferrer" class="btn btn-social btn-github" aria-label="Visit Raghav Bansal's GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Required Contact Form (Name, Email, Message) -->
+          <div class="contact-form-card glass-panel reveal">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-header">
+                <h3>Send a Direct Message</h3>
+                <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+              </div>
+
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="name" class="form-label">
+                  Your Name <span class="required">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name" />
+                </div>
+                <span class="form-error" id="name-error">Please enter your name</span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  Your Email Address <span class="required">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required autocomplete="email" />
+                </div>
+                <span class="form-error" id="email-error">Please provide a valid email address</span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="message" class="form-label">
+                  Your Message <span class="required">*</span>
+                </label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Hi Raghav, I came across your portfolio and would like to discuss..." required></textarea>
+                </div>
+                <span class="form-error" id="message-error">Please enter a message (at least 10 characters)</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane btn-icon"></i>
+              </button>
+
+              <!-- Feedback / Status Container -->
+              <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="footer-logo">
+          <span class="logo-box">RB</span>
+          <span class="logo-text">Raghav Bansal</span>
+        </a>
+        <p class="footer-tagline">
+          Computer Science Engineering Student • Built with HTML, CSS & JavaScript
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">
+          &copy; <span id="current-year"></span> Raghav Bansal. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <div>
+          <span class="modal-badge" id="modal-project-category">Project Details</span>
+          <h3 class="modal-title" id="modal-project-title">Project Name</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modal-project-body">
+        <!-- Content will be dynamically populated by JavaScript -->
+      </div>
+
+      <div class="modal-footer" id="modal-project-footer">
+        <a href="#contact" class="btn btn-primary btn-sm modal-contact-link">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Discuss Project</span>
+        </a>
+        <a href="https://github.com/Raghav123bansal/Raghav-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="modal-github-link">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== RESUME SUMMARY MODAL ==================== -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-card resume-modal-card glass-panel">
+      <div class="modal-header">
+        <div>
+          <span class="modal-badge">Curriculum Vitae</span>
+          <h3 class="modal-title" id="resume-modal-title">Raghav Bansal — Resume</h3>
+        </div>
+        <button class="modal-close-btn" id="resume-modal-close" aria-label="Close resume modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body resume-body">
+        <!-- Candidate Overview -->
+        <div class="resume-section">
+          <h4 class="resume-heading"><i class="fa-solid fa-user-graduate"></i> Academic Profile</h4>
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-title">Bachelor of Technology (B.Tech) — Computer Science & Engineering</span>
+              <span class="resume-item-date">Present</span>
+            </div>
+            <p class="resume-item-sub">Core Courses: Data Structures & Algorithms, Object-Oriented Programming (Java), Database Management Systems (MySQL), Operating Systems, Computer Networks.</p>
+          </div>
+        </div>
+
+        <!-- Technical Skills Summary -->
+        <div class="resume-section">
+          <h4 class="resume-heading"><i class="fa-solid fa-code"></i> Technical Toolkit</h4>
+          <div class="resume-skills-cluster">
+            <div class="cluster-row">
+              <strong>Languages:</strong> Java (Core & OOP), Python, JavaScript (ES6+)
+            </div>
+            <div class="cluster-row">
+              <strong>Web Technologies:</strong> HTML5, CSS3 (Grid/Flexbox), RESTful APIs, Responsive Design
+            </div>
+            <div class="cluster-row">
+              <strong>Database:</strong> MySQL (Relational Schema Design, Queries, Joins)
+            </div>
+            <div class="cluster-row">
+              <strong>Computer Science:</strong> Data Structures & Algorithms, System Optimization, Complexity Analysis
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Projects Summary -->
+        <div class="resume-section">
+          <h4 class="resume-heading"><i class="fa-solid fa-folder-open"></i> Key Engineering Projects</h4>
+          
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-title">ParKezy — Smart Parking Management System</span>
+              <span class="resume-item-tags">Java • MySQL • JavaScript • HTML/CSS</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Designed and built a full-stack real-time urban parking allocation platform with automated vacancy tracking.</li>
+              <li>Engineered concurrent slot booking mechanisms with ACID-compliant MySQL transactions to prevent double-booking.</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-title">AlgoPulse — Interactive DSA Visualizer</span>
+              <span class="resume-item-tags">JavaScript • HTML5 Canvas • Algorithms</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Created interactive visual simulations for Sorting algorithms (QuickSort, MergeSort) and Graph traversals.</li>
+              <li>Implemented real-time step playback and live time/space complexity inspection metrics.</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-title">IntelliStudy — AI-Powered Academic Assistant</span>
+              <span class="resume-item-tags">Python • AI / NLP • MySQL • JavaScript</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Built an AI-driven academic tool parsing lecture notes to auto-generate concise summaries and conceptual quizzes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-sm" id="print-resume-btn">
+          <i class="fa-solid fa-print"></i>
+          <span>Print / Save as PDF</span>
+        </button>
+        <a href="#contact" class="btn btn-outline btn-sm modal-contact-link">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Contact Raghav</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
